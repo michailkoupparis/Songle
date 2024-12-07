@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/app_background"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:typeface="serif"
+        android:textColor="@color/MintCream"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/found_words_title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:id="@+id/words_container"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/border_list"
+        android:layout_below="@+id/solution_container"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/try_solution"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:text="@string/try_solution"
+        android:textColor="@color/MintCream"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/home_button"
+        android:textSize="12sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/solve"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/solve"
+        android:layout_width="95dp"
+        android:layout_height="32dp"
+        android:text="@string/solve_button"
+        android:textColor="@color/MintCream"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:background="@drawable/home_button"
+        android:textSize="12sp"
+        android:layout_above="@+id/words_container"
+        android:layout_alignEnd="@+id/words_container"
+        android:layout_marginBottom="11dp" />
+
+    <EditText
+        android:id="@+id/solution_container"
+        android:layout_width="230dp"
+        android:layout_height="100dp"
+        android:hint="@string/solution_box_indicator"
+        android:inputType="text"
+        android:typeface="serif"
+        android:textSize="14sp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/words_container" />
+
+    <ImageButton
+        android:id="@+id/btn_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:onClick="onInfClick"
+        app:srcCompat="@drawable/hint_icon"
+        android:layout_above="@+id/solve"
+        android:layout_alignEnd="@+id/solution_container" />
+
+
+</RelativeLayout>

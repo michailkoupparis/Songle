@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6e4e4"
+    android:id="@+id/parent">
+
+
+
+    <ImageView
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#DA5F6A"
+        android:gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tutorial_map_title"
+            android:textColor="@color/BlackLetters"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginTop="11dp"
+            android:layout_below="@+id/a"
+            android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/markers_explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/markers_explanation"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/home_title" />
+
+
+    <TextView
+        android:id="@+id/makrers_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/markers_label"
+        android:layout_below="@+id/markers_explanation"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:id="@+id/ucclassified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/white_marker"
+        android:layout_below="@+id/makrers_label"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/unclassified_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/unclassified"
+        android:layout_below="@+id/makrers_label"
+        android:layout_alignStart="@+id/boring_icon" />
+
+    <TextView
+        android:id="@+id/boring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/yellow_marker"
+        android:layout_below="@+id/unclassified_icon"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/boring_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/boring"
+        android:layout_alignTop="@+id/boring"
+        android:layout_toEndOf="@+id/cancel_dialog" />
+
+    <TextView
+        android:id="@+id/not_boring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/yellow_circle_marker"
+        android:layout_alignTop="@+id/not_boring_icon"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/not_boring_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/not_boring"
+        android:layout_below="@+id/boring_icon"
+        android:layout_alignStart="@+id/boring_icon" />
+
+    <TextView
+        android:id="@+id/interesting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/orange_marker"
+        android:layout_below="@+id/not_boring_icon"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/interesting_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/interesting"
+        android:layout_below="@+id/not_boring_icon"
+        android:layout_alignStart="@+id/not_boring_icon" />
+
+    <TextView
+        android:id="@+id/very_interesting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        android:text="@string/red_marker"
+        android:layout_below="@+id/interesting_icon"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp" />
+
+    <ImageView
+        android:id="@+id/very_interesting_icon"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/very_interesting"
+        android:layout_alignBottom="@+id/very_interesting"
+        android:layout_alignStart="@+id/interesting_icon" />
+
+    <TextView
+        android:id="@+id/makrers_clicked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ff000000"
+        android:textSize="10sp"
+        android:text="@string/markers_clicked"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/very_interesting"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/previous_dialog"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@drawable/previous"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/next_dialog"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:background="@drawable/next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/cancel_dialog"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:background="@drawable/home_button"
+        android:textColor="#ffffffff"
+        android:text="@string/cancel"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/makrers_clicked"
+        android:layout_alignStart="@+id/home_title" />
+
+    <ImageButton
+        android:id="@+id/buttons_view"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        app:srcCompat="@drawable/eye"
+        android:background="@null"
+        android:onClick="setExampleView"
+        android:layout_below="@+id/makrers_clicked"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="26dp" />
+
+</RelativeLayout>

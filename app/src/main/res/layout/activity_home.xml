@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context="com.example.michailkoupparis.songle.Home">
+
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home_title"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:textColor="@color/MintCream"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/new_game"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="@string/new_game"
+        android:visibility="visible"
+        android:background="@drawable/home_button"
+        android:textSize="20sp"
+        android:textColor="@color/MintCream"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/continue_game"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="@string/continue_game"
+        android:visibility="visible"
+        android:background="@drawable/home_button"
+        android:textSize="20sp"
+        android:textColor="@color/MintCream"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintVertical_bias="0.23"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/words_found"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="@string/words_found"
+        android:visibility="visible"
+        android:background="@drawable/home_button"
+        android:textSize="20sp"
+        android:textColor="@color/MintCream"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintVertical_bias="0.36"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/go_to_song_selection"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="@string/song_selection"
+        android:visibility="visible"
+        android:background="@drawable/home_button"
+        android:textSize="20sp"
+        android:textColor="@color/MintCream"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintVertical_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <Button
+        android:id="@+id/settings_button"
+        android:layout_width="220dp"
+        android:layout_height="57dp"
+        android:text="@string/settings"
+        android:visibility="visible"
+        android:textSize="20sp"
+        android:textColor="@color/MintCream"
+        android:background="@drawable/home_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        app:layout_constraintVertical_bias="0.62"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+    <TextView
+        android:id="@+id/scoreView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:textColor="#ff000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.714" />
+
+    <ImageButton
+        android:id="@+id/score_information"
+        android:layout_width="42dp"
+        android:layout_height="26dp"
+        app:srcCompat="@drawable/information_smaller"
+        android:background="@null"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintBottom_toTopOf="@+id/scoreView"
+        app:layout_constraintTop_toBottomOf="@+id/settings_button"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/distanceView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:textColor="#ff000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.778" />
+
+    <TextView
+        android:id="@+id/difficultyView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:textColor="#ff000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.842" />
+
+    <TextView
+        android:id="@+id/songNumberView"
+        android:layout_width="252dp"
+        android:layout_height="34dp"
+        android:textColor="#ff000000"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906" />
+
+    <ImageButton
+        android:id="@+id/help_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/help"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintVertical_bias="0.009" />
+
+
+</android.support.constraint.ConstraintLayout>

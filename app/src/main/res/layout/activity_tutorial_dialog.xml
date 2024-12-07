@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e6e4e4"
+    android:id="@+id/parent">
+
+
+
+        <ImageView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#DA5F6A"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@drawable/help" />
+
+
+
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/home_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/tutorial_title"
+            android:textColor="@color/BlackLetters"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.179"
+            app:layout_constraintHorizontal_bias="0.503" />
+
+        <TextView
+            android:id="@+id/objective_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/objective_detailed"
+            android:textColor="@color/BlackLetters"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.291"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <Button
+            android:id="@+id/home_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:text="@string/tutorial_home"
+            android:textColor="#ffffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/map_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:text="@string/tutorial_map"
+            android:textColor="#ffffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.6" />
+
+
+        <Button
+            android:id="@+id/settings_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:text="@string/tutorial_settings"
+            android:textColor="#ffffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+
+        <Button
+            android:id="@+id/word_founds_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:text="@string/tutorial_found_words"
+            android:textColor="#ffffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.8" />
+
+        <Button
+            android:id="@+id/song_selection_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:text="@string/tutorial_song"
+            android:textColor="#ffffffff"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.9" />
+
+        <Button
+            android:id="@+id/next_dialog"
+            android:layout_width="88dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="98dp"
+            android:background="@drawable/next"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.946"
+            app:layout_constraintVertical_bias="0.04" />
+
+
+        <Button
+            android:id="@+id/cancel_dialog"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:background="@drawable/home_button"
+            android:textColor="#ffffffff"
+            android:text="@string/cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="400dp"
+            app:layout_constraintVertical_bias="0.0" />
+    </android.support.constraint.ConstraintLayout>
+
+</RelativeLayout>

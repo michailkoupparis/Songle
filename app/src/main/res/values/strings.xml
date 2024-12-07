@@ -1,0 +1,203 @@
+<resources>
+    <string name="app_name">Songle</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_welcome__screen">Welcome_Screen</string>
+
+    <string name="new_game">NEW GAME</string>
+    <string name="continue_game">CONTINUE</string>
+    <string name="song_selection">SELECT SONG</string>
+    <string name="words_found">FOUND WORDS</string>
+    <string name="settings">SETTINGS</string>
+    <string name="home_title">SONGLE</string>
+    <string name="song_player_title">SONG PLAYER</string>
+    <string name="song_player_descr">Click on the name of the song to open its Youtube Link.</string>
+
+    <string name="very_easy">VERY EASY </string>
+    <string name="very_easy_description">Display all the words on map and they are divided as very interesting, interesting, boring and not boring.</string>
+    <string name="easy">EASY </string>
+    <string name="easy_description">Display all the words on map and they are divided as interesting, boring and not boring.</string>
+    <string name="normal">NORMAL</string>
+    <string name="normal_description">Display only 75% of words on map and they are divided as interesting, boring and not boring.</string>
+    <string name="hard">HARD </string>
+    <string name="hard_description">Display only 50% of words on map and they are divided as boring and not boring.</string>
+    <string name="very_hard">VERY HARD</string>
+    <string name="very_hard_description">Display only 25% of words on map and all are unclassified.</string>
+    <string name="difficulty">SELECTED DIFFICULTY:</string>
+
+    <string name="walke_mode">You have to be 5 meters near to select a Song word!</string>
+    <string name="anywhere_mode">You can select a Song word from anywhere.</string>
+    <string name="mode">SELECT GAME MODE</string>
+
+
+    <string name="found_words_title">ALL WORDS FOUND ALREADY</string>
+
+    <string name="try_solution">SUBMIT SOLUTION</string>
+    <string name="solve_button">GET SOLUTION </string>
+    <string name="solution_box_indicator">Try Solution Here:</string>
+
+
+    <string name="success">Correct Solution Congratulations!!!!!</string>
+    <string name="goToNextSong">Go to Next Song!</string>
+    <string name="slecetDifferentSong">Go to Song Selection!</string>
+    <string name="points_awarded">Points Earned:</string>
+
+
+    <string name="go_to_found_songs">Found Songs Playlist</string>
+    <string name="sure_change_song">Song in progress, if you select to change the song the progress will be lost!!</string>
+    <string name="yes_change_song">Change</string>
+    <string name="no_dont_change_song">Continue</string>
+
+    <string name="sure_change_level">Current song progress will be lost by changing level!!!</string>
+    <string name="yes_change_level">Change !</string>
+    <string name="no_dont_change_level">Dont Change !</string>
+
+    <string name="sure_change_mode">If you are on near mode you will be awarded more points! If you change it once you loose the 10 points Bonus!!!!</string>
+    <string name="yes_change_mode">Change !</string>
+    <string name="no_dont_change_mode">Dont Change !</string>
+
+    <string name="sure_solve">Are you Sure? No points for given solutions!!!</string>
+    <string name="yes_solve_song">Solve Anyway!</string>
+    <string name="no_dont_solve_song">Continue Trying.</string>
+
+
+    <string name="sure_new_game">Game is in Progress!!</string>
+    <string name="yes_new_game">New Game!</string>
+    <string name="no_new_game">Continue!</string>
+    <string name="OK">OK</string>
+
+    <string name="no_wifi"> The game downloads files online. Internet access is required.</string>
+    <string name="retry">Retry</string>
+    <string name="no_location_near"> Location is enabled!Distance and near mode requires location!</string>
+
+
+    <string name="wrong_answer"> Wrong Answer. Try Again.</string>
+
+    <string name="sure_hint"> Showing song artist cost 10 points</string>
+    <string name="yes_hint"> SHOW</string>
+    <string name="no_hint">CANCEL</string>
+
+    <string name="sure_distance"> Location is enabled.
+        Distance will not be changed.
+        You can continue but distance walked will not be updated.</string>
+    <string name="sure_add">Location is enabled.
+       You are near mode, distance from marker cannot be calculated without enabling Location.
+    </string>
+
+
+    <string name="score_explanation_title"> SCORE </string>
+    <string name="current_score"> CURRENT SCORE:</string>
+    <string name="overall_explanation">Points rewarded after a solution is found. Their value depends on the difficulty level, game mode, if hint is taken and if you found the song or select to see the solution. Press eye for visual example. </string>
+    <string name="explanation">EXPLANATION</string>
+    <string name="difficulty_weight"> DIFFICULTY WEIGHT: </string>
+    <string name="diff_explanation"> 50 points for very hard\n40 points for hard\n30 points for normal\n20 points for easy\n10 points for very easy</string>
+    <string name="mode_weight"> MODE WEIGHT: </string>
+    <string name="mode_explanation"> 10 points bonus for near mode\n0 points for distance mode</string>
+    <string name="hint_penalty"> HINT PENALTY: </string>
+    <string name="hint_explanation"> -5 points for hint\n-0 for no hint\nShowing song artist costs.</string>
+    <string name="given_solution_points"> GIVEN SOLUTION POINTS: </string>
+    <string name="given_solution_explanation"> 0 points for given solutions\n5 to 60 points for finding solutions\n Also no points for already found songs. </string>
+
+
+    <string name="tutorial_title">SONGLE TUTORIAL</string>
+    <string name="objective_detailed">The objective of the game is to collect words representing
+    lyrics of a song. Words are represented by place markers on a map, by clicking them you acquire the corresponding word.
+     You can see the words collected and guess the song. Correct answers are rewarded with game points.</string>
+
+    <string name="tutorial_home">HOME TUTORIAL</string>
+    <string name="tutorial_map">MAP TUTORIAL</string>
+    <string name="tutorial_found_words">FOUND WORDS TUTORIAL</string>
+    <string name="tutorial_settings">SETTINGS TUTORIAL</string>
+    <string name="tutorial_song">SONG SELECTION TUTORIAL</string>
+    <string name="next">NEXT</string>
+    <string name="cancel">CANCEL</string>
+
+    <string name="tutorial_home_title">HOME SCREEN</string>
+    <string name="home_buttons_explanation">BUTTONS EXPLANATION:</string>
+    <string name="button_detail_explanation">NEW GAME button is for starting new game in case you want to start from scratch.
+        CONTINUE button is for continuing previous game or even start a new if no game is in progress.
+        FOUND WORDS button is for displaying found words and also getting hints or trying to guess the current song.
+        SELECT SONG button is for selecting which song (by number) you are going to play and viewing already found songs.
+        SETTINGS button is for selecting game difficulty and mode.</string>
+    <string name="features_explanation">USER PREFERENCES AND RECORDS:</string>
+    <string name="features_detail_explanation">In the bottom of the screen you can see your score,
+        the distance you walked while playing the game, the current selected difficulty and the number of the song you currently trying to find.
+        The information icon is for further explanation about the scoring system.  </string>
+
+    <string name="tutorial_map_title">MAP SCREEN</string>
+    <string name="markers_explanation">MARKERS:</string>
+    <string name="markers_label">5 different markers representing the important of the word.</string>
+
+    <string name="white_marker">Unclassified words.</string>
+    <string name="yellow_marker">Boring words.</string>
+    <string name="yellow_circle_marker">Not boring words.</string>
+    <string name="orange_marker">Interesting words.</string>
+    <string name="red_marker">Very interesting words.</string>
+
+
+    <string name="markers_clicked">When you click a marker you collect a word.
+        If you are in near mode you have to be 5 meters the marker.
+        If the word is collected a message will appear indicate that the word is added to bag.
+        To view previously collected words you can click on the bag icon at the bottom right of the map screen or go to FOUND WORDS from home.</string>
+
+
+    <string name="tutorial_settings_title">SETTINGS SCREEN</string>
+    <string name="tutorial_difficulty">DIFFICULTY: </string>
+    <string name="tutorial_diff_explanation">There are Five Different Difficulty Levels:\n
+        Each has an information button for further explanation.\n
+        According to your choice the variety of markers types on the map change and their quantity.
+        Also each has a different weight on final score.\n
+        50 Very Hard, 40 Hard, 30 Normal, 20 Easy, 10 Very easy.</string>
+
+    <string name="tutorial_mode_title"> MODE: </string>
+    <string name="tutorial_mode_explanation">There are two Different Modes:\n
+        Near Mode indicates that you must be at least 5 meters near the marker to collect the word.\n
+        Anywhere Mode indicates that you can select the marker from anywhere.\n
+        Finding Solution in near mode gives an extra 10 points bonus!
+    </string>
+
+    <string name="tutorial_found_words_title">FOUND SCREEN</string>
+    <string name="tutorial_found_word_description">In Found Song Screen you can view the words you collected
+        get hints, try to find the solution and if you want get the solution.</string>
+    <string name="tutorial_words_container">
+        Words Collected are represented in a scrollable list.
+    </string>
+    <string name="tutorial_solution">There is an input text box where you can type your Solution
+        and then you can see if its right by pressing the submit solution button.</string>
+    <string name="tutorial_get_solution">If you are really stuck you can press the Get Solution button
+        and get the answer but you will not be awarded any points. If you want you can select a different song and come back later.
+    </string>
+    <string name="tutorial_hint">Also there is a hint button for getting current song\'s artist
+        but be careful hints cost 5 points.
+    </string>
+
+
+    <string name="tutorial_song_selection_title">SONG SCREEN</string>
+    <string name="tutorial_song_selection_descr">In Song Selection you can select whatever song represented
+    by a number at the grid. Currently selected Song is indicated with a light blue colour.</string>
+    <string name="tutorial_song_selection_correct">
+        Previously found Songs are indicated by a tick mark next to their corresponding number in the grid.
+    </string>
+    <string name="tutorial_song_selection_continue">
+        Also at the bottom of the screen the previously selected song is represented to let you know
+        the previous one so you can continue your game if after you change your option you regret it.
+    </string>
+    <string name="tutorial_song_selection_correct_solution">
+       After a song is found a message pop up asking how you want to continue you can either come to Song Selection screen
+        and select whatever song or you can play the next song in line.
+    </string>
+
+    <string name="tutorial_song_player_title">SONG PLAYER</string>
+    <string name="tutorial_song_player_descr"> You can view the already found Songs and play them in Youtube!!</string>
+    <string name="tutorial_song_player_reach">
+        In Song Selection there is a button on the bottom of the Screen
+        with text "FOUND SONGS PLAYER". When this button is pressed the Song Player Screen is opened. </string>
+    <string name="tutorial_song_player_list">
+        Found Songs are presented in a List on the Song Player Screen.
+    </string>
+    <string name="tutorial_song_player_select_song">
+       You can press any Song of the Found Song List. After you press a Song, Youtube opens on the selected song.
+        You can then return to the game from where you left by pressing the back button.
+    </string>
+
+</resources>
